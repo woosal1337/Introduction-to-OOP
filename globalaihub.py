@@ -2,7 +2,7 @@ class globalaihub:
     
     def __init__(self, *numbers):
         self._data = list(numbers)
-        self.length = len(numbers)
+        #self.length = len(numbers)
         
     def mean(self):
         try:
@@ -16,7 +16,8 @@ class globalaihub:
         except:
             return "Error"
             
-    def custom_length(self):
+    @property
+    def length(self):
         try:
             finalLen = 0
         
@@ -27,7 +28,16 @@ class globalaihub:
         
         except:
             return "Error"
-    
-customClass = globalaihub(0,1,2,3,4,5,6,7)
-print(customClass.length)
-print(customClass.custom_length())
+            
+    def return_inp(self):
+        try:
+            return self._data
+        
+        except:
+            return "Error"
+        
+# customClass = globalaihub(0,1,2,3,4,5,6,7)
+# print(customClass.length)
+# print(customClass.return_inp())
+
+# #print(customClass.custom_length())
