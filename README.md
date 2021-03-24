@@ -3,7 +3,7 @@
 ## Day 0
 ### Content:
 -	What is OOP?
--	What and where OOP is used?
+-	Why and where OOP is used?
 -	General and simple classes
 -	Accessing and creating variables within classes
 -	Inheritance
